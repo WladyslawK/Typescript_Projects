@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.container__indicator{
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+.container__On{
+    background-color: green;
+}
+.container__Off{
+    background-color: red;
+}
+.container__circleIndicator{
+    margin-left: 5px;
+    width: 20px;
+    border-radius: 50%;
+}
+.container__circleOn{
+    background-color: green;
+}
+.container__circleOff{
+    background-color: red;
+}

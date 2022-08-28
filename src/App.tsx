@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Accordion} from "./components/Accordion";
 import {Rating} from "./components/Rating";
+import {OnOff} from "./components/OnOff/OnOff";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -25,6 +26,8 @@ function App() {
           <Rating value={3}/>
           <Rating value={4}/>
           <Rating value={5}/>
+          <OnOff value={false}/>
+          <OnOff value={true}/>
       </div>
   );
 }
