@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Accordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Rating.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Rating.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Star.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Star.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661526891197</updated>
-      <workItem from="1661526899015" duration="9118000" />
+      <workItem from="1661526899015" duration="14214000" />
     </task>
     <servers />
   </component>

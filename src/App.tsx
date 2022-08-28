@@ -17,8 +17,8 @@ const menuItems = [
 function App() {
   return (
       <div>
-        <Accordion accordionTitle={"Menu"} accordionBody={menuItems}/>
-        <Accordion accordionTitle={"Menu1"} accordionBody={menuItems}/>
+        <Accordion accordionTitle={"Menu"} accordionBody={menuItems} collapsed={false}/>
+        <Accordion accordionTitle={"Menu1"} accordionBody={menuItems} collapsed={true}/>
           <Rating value={0}/>
           <Rating value={1}/>
           <Rating value={2}/>

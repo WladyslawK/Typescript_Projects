@@ -8,9 +8,10 @@ type AccordionBodyType = {
 type AccordionType = {
     accordionTitle: string
     accordionBody: Array<AccordionBodyType>
+    collapsed: boolean
 }
 
-export const Accordion: React.FC<AccordionType> = ({accordionTitle, accordionBody }) => {
+export const Accordion: React.FC<AccordionType> = ({accordionTitle, accordionBody, collapsed}) => {
 
     type AccordionTitleType = {
         title: string
@@ -18,9 +19,9 @@ export const Accordion: React.FC<AccordionType> = ({accordionTitle, accordionBod
 
     const AccordionTitle: React.FC<AccordionTitleType> = ({title}) => {
         return (
-            <>
+            <div>
                 {title}
-            </>
+            </div>
         )
     }
 
@@ -30,20 +31,21 @@ export const Accordion: React.FC<AccordionType> = ({accordionTitle, accordionBod
 
     const AccordionBody: React.FC<AccordionBodyMenuType> = ({menuItems}) => {
 
-        const accoordionBodyElements = menuItems.map(i => <li key={i.id}>{i.title}</li>)
+        const accordionBodyElements = menuItems.map(i => <li key={i.id}>{i.title}</li>)
 
         return (
             <ul>
-                {accoordionBodyElements}
+                {accordionBodyElements}
             </ul>
         )
     }
 
-
     return (
         <>
             <AccordionTitle title={accordionTitle}/>
-            <AccordionBody menuItems={accordionBody}/>
+            {!collapsed && <AccordionBody menuItems={accordionBody}/>}
         </>
     );
+
+
 };
