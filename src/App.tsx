@@ -1,9 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Accordion} from "./components/Accordion";
 import {Rating} from "./components/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -18,8 +19,10 @@ const menuItems = [
 function App() {
   return (
       <div>
-        <Accordion accordionTitle={"Menu"} accordionBody={menuItems} collapsed={false}/>
-        <Accordion accordionTitle={"Menu1"} accordionBody={menuItems} collapsed={true}/>
+        {/*<Accordion accordionTitle={"Menu"} accordionBody={menuItems} collapsed={false}/>
+        <Accordion accordionTitle={"Menu1"} accordionBody={menuItems} collapsed={true}/>*/}
+
+          <UncontrolledAccordion accordionTitle={"Uncontrolled Menu"} accordionBody={menuItems} collapsed={true}/>
           <Rating value={0}/>
           <Rating value={1}/>
           <Rating value={2}/>
@@ -28,6 +31,8 @@ function App() {
           <Rating value={5}/>
           <OnOff value={false}/>
           <OnOff value={true}/>
+
+          <UncontrolledRating value={4}/>
       </div>
   );
 }
