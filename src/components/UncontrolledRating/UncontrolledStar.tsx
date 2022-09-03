@@ -20,8 +20,7 @@ export  const UncontrolledStar: React.FC<StarType> = ({selected, changeRating, i
 
     return (
         <>
-          {selected && <span id={id} onClick={onclickHandler} style={spanStyle}><strong>star</strong></span>}
-          {!selected && <span id={id} onClick={onclickHandler} style={spanStyle}>star</span>}
+          {selected ? <span id={id} onClick={onclickHandler} style={spanStyle}><strong>star</strong></span> : <span id={id} onClick={onclickHandler} style={spanStyle}>star</span>}
         </>
     );
 };
