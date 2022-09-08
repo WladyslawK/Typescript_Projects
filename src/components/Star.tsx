@@ -1,15 +1,17 @@
 import React from 'react';
 import s from "./Star.module.css"
+import {RatingValueType} from "../App";
 
 type StarType = {
+    id: RatingValueType
     selected: boolean
+    onClick: (newRating: RatingValueType) => void
 }
 
-export  const Star: React.FC<StarType> = ({selected}) => {
+export  const Star: React.FC<StarType> = ({id, selected, onClick}) => {
     return (
         <>
-          {selected && <span className={s.container}><strong>star</strong></span>}
-          {!selected && <span className={s.container}>star</span>}
+          {<span onClick={() => onClick(id)} className={s.container}> {selected ? <strong>star </strong>: "star "}</span>}
         </>
     );
 };

@@ -1,19 +1,25 @@
 import React from 'react';
 import {Star} from "./Star";
+import {RatingValueType} from "../App";
 
 type RatingType = {
-    value: 0 | 1 | 2 | 3 | 4 | 5
+    value: RatingValueType
+    onClick: (rating: RatingValueType) => void
 }
 
-export const Rating: React.FC<RatingType> = ({value}) => {
+export const Rating: React.FC<RatingType> = ({value, onClick}) => {
 
-   return (
-        <div>
-            <Star selected={value > 0}/>
-            <Star selected={value > 1}/>
-            <Star selected={value > 2}/>
-            <Star selected={value > 3}/>
-            <Star selected={value > 4}/>
-        </div>
+    const arrStars = []
+    for(let i = 1; i < 6; i++){
+        arrStars.push(<Star id={i as RatingValueType} selected={value >= i} onClick={onClick}/>)
+    }
+    return (
+        <>
+            <div>
+                {arrStars}
+            </div>
+        </>
+
+
     )
 };

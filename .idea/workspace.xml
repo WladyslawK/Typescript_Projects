@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/OnOff/ControlledOnOff/ControlledOnOff.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Star.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledStar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledStar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1/src/components/UncontrolledRating",
+    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1/src/components/OnOff/ControlledOnOff",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -37,6 +43,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\OnOff\ControlledOnOff" />
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\UncontrolledRating" />
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\UncontrolledAccordion" />
     </key>
@@ -68,7 +75,8 @@
       <updated>1661526891197</updated>
       <workItem from="1661526899015" duration="16950000" />
       <workItem from="1662112502626" duration="4160000" />
-      <workItem from="1662152977925" duration="4390000" />
+      <workItem from="1662152977925" duration="4555000" />
+      <workItem from="1662664252994" duration="7381000" />
     </task>
     <servers />
   </component>

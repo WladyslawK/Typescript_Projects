@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Accordion} from "./components/Accordion";
 import {Rating} from "./components/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
+import {ControlledOnOff} from "./components/OnOff/ControlledOnOff/ControlledOnOff";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -14,27 +15,42 @@ const menuItems = [
     {id: 5, title: "link5"},
 ]
 
-
+export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
 
 function App() {
-  return (
-      <div>
-        {/*<Accordion accordionTitle={"Menu"} accordionBody={menuItems} collapsed={false}/>
+
+    const [ratingValue, setRatingValue] = useState<RatingValueType>(3)
+    const [accordionValue, setAccordionValue] = useState<boolean>(false)
+    const [onOffValue, setOnOffValue] =useState<boolean>(false)
+    /*const changeRatingCallback = (newRating: RatingValueType) => setRatingValue(newRating)*/
+
+
+    return (
+        <div>
+            {/*<Accordion accordionTitle={"Menu"} accordionBody={menuItems} collapsed={false}/>
         <Accordion accordionTitle={"Menu1"} accordionBody={menuItems} collapsed={true}/>*/}
 
-          <UncontrolledAccordion accordionTitle={"Uncontrolled Menu"} accordionBody={menuItems} collapsed={true}/>
-          <Rating value={0}/>
-          <Rating value={1}/>
-          <Rating value={2}/>
-          <Rating value={3}/>
-          <Rating value={4}/>
-          <Rating value={5}/>
-          <OnOff value={false}/>
-          <OnOff value={true}/>
+            <h4>Controlled Accordion according to the BLL UI concept</h4>
+            <Accordion title={"Controlled Accordion"} accordionBody={menuItems} collapsed={accordionValue} onClickChangeCollapsed={setAccordionValue}/>
 
-          <UncontrolledRating value={4}/>
-      </div>
-  );
+            <h4>Uncontrolled Accordion with local state</h4>
+            <UncontrolledAccordion accordionTitle={"Uncontrolled Menu"} accordionBody={menuItems} collapsed={true}/>
+
+            <h4>Controlled Rating according to BLL and UI concepts</h4>
+            <Rating value={ratingValue} onClick={setRatingValue}/>
+
+            <h4>UnControlled Rating with local useState manager</h4>
+            <UncontrolledRating value={3}/>
+
+
+            <h4>Uncontrolled OnOff</h4>
+            <OnOff value={false}/>
+            <OnOff value={true}/>
+
+            <h4>Controlled OnOff </h4>
+            <ControlledOnOff value={onOffValue} changeOnOffStatus={setOnOffValue}/>
+        </div>
+    );
 }
 
 export default App;

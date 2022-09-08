@@ -5,21 +5,26 @@ type AccordionBodyType = {
     title: string
 }
 
-type AccordionType = {
-    accordionTitle: string
-    accordionBody: Array<AccordionBodyType>
+type AccordionTitleType = {
+    title: string
     collapsed: boolean
+    onClickChangeCollapsed: (newValue: boolean) => void
 }
 
-export const Accordion: React.FC<AccordionType> = ({accordionTitle, accordionBody, collapsed}) => {
+type AccordionType = {
+    title: string
+    collapsed: boolean
+    onClickChangeCollapsed: (newValue: boolean) => void
+    accordionBody: Array<AccordionBodyType>
+}
 
-    type AccordionTitleType = {
-        title: string
-    }
+export const Accordion: React.FC<AccordionType> = ({title, collapsed, onClickChangeCollapsed, accordionBody}) => {
 
-    const AccordionTitle: React.FC<AccordionTitleType> = ({title}) => {
+
+
+    const AccordionTitle: React.FC<AccordionTitleType> = ({title, onClickChangeCollapsed, collapsed}) => {
         return (
-            <div>
+            <div onClick={() =>{onClickChangeCollapsed(!collapsed)}}>
                 {title}
             </div>
         )
@@ -42,7 +47,7 @@ export const Accordion: React.FC<AccordionType> = ({accordionTitle, accordionBod
 
     return (
         <>
-            <AccordionTitle title={accordionTitle}/>
+            <AccordionTitle title={title} onClickChangeCollapsed={onClickChangeCollapsed} collapsed={collapsed}/>
             {!collapsed && <AccordionBody menuItems={accordionBody}/>}
         </>
     );
