@@ -1,16 +1,17 @@
 import React, {useState} from 'react';
-import s from "./OnOff.module.css"
+
 
 type OnOffType = {
     value: boolean
+    changeOnOffStatus?: (newValue: boolean) => void
 }
 
-export const OnOff: React.FC<OnOffType> = ({value}) => {
+export const OnOff: React.FC<OnOffType> = ({value, changeOnOffStatus}) => {
 
-    const [indicatorValue, setIndicatorValue] = useState(value)
 
     const changeIndicatorHandler = (newValue: boolean) => {
-        setIndicatorValue(newValue)
+        if(changeOnOffStatus) changeOnOffStatus(newValue)
+        console.log(value)
     }
 
     const containerStyle = {
@@ -28,7 +29,7 @@ export const OnOff: React.FC<OnOffType> = ({value}) => {
         borderRadius: "6px",
         padding: "2px",
         margin: "2px",
-        backgroundColor: indicatorValue? "green" : "white",
+        backgroundColor: value? "green" : "white",
     }
 
     const offContainer = {
@@ -40,7 +41,7 @@ export const OnOff: React.FC<OnOffType> = ({value}) => {
         borderRadius: "6px",
         padding: "2px",
         margin: "2px",
-        backgroundColor: indicatorValue? "white" : "red",
+        backgroundColor: value? "white" : "red",
     }
 
     const circleIndicator = {
@@ -48,7 +49,7 @@ export const OnOff: React.FC<OnOffType> = ({value}) => {
         margin: "2px",
         borderRadius: "50%",
         border: "1px solid black",
-        backgroundColor: indicatorValue? "green" : "red",
+        backgroundColor: value? "green" : "red",
     }
 
     return (

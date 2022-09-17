@@ -1,6 +1,6 @@
 import React from 'react';
-import {Star} from "./Star";
-import {RatingValueType} from "../App";
+import {Star} from "../Star";
+import {RatingValueType} from "../../App";
 
 type RatingType = {
     value: RatingValueType

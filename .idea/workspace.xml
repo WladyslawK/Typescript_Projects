@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OnOff/ControlledOnOff/ControlledOnOff.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OnOff/ControlledOnOff.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Rating/ControlleRating.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UNCONTROLLED_Accordion.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledOnOff/UNCONTROLLED_OnOff.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UNCONTROLLED_Rating.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Star.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledStar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledStar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OnOff/ControlledOnOff/ControlledOnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledOnOff/UncontrolledOnOff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledOnOff/OnOff.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +41,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1/src/components/OnOff/ControlledOnOff",
+    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.editor",
     "ts.external.directory.path": "C:\\IT-kamasutra\\Course Homework\\Kabzda-kak-prosto\\IT_K_project_T1\\node_modules\\typescript\\lib",
@@ -47,8 +58,13 @@
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\UncontrolledRating" />
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\UncontrolledAccordion" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components" />
+      <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\Accordion" />
+      <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\Rating" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -59,8 +75,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -76,7 +103,9 @@
       <workItem from="1661526899015" duration="16950000" />
       <workItem from="1662112502626" duration="4160000" />
       <workItem from="1662152977925" duration="4555000" />
-      <workItem from="1662664252994" duration="7381000" />
+      <workItem from="1662664252994" duration="8671000" />
+      <workItem from="1662846521107" duration="23000" />
+      <workItem from="1663394855194" duration="12473000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion";
-import {Rating} from "./components/Rating";
-import {OnOff} from "./components/OnOff/OnOff";
+import {Accordion} from "./components/Accordion/Accordion";
+import {Rating} from "./components/Rating/Rating";
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
-import {ControlledOnOff} from "./components/OnOff/ControlledOnOff/ControlledOnOff";
+import {OnOff} from "./components/OnOff/OnOff";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -44,11 +44,11 @@ function App() {
 
 
             <h4>Uncontrolled OnOff</h4>
-            <OnOff value={false}/>
-            <OnOff value={true}/>
+            <UncontrolledOnOff value={false}/>
+            <UncontrolledOnOff value={true}/>
 
             <h4>Controlled OnOff </h4>
-            <ControlledOnOff value={onOffValue} changeOnOffStatus={setOnOffValue}/>
+            <OnOff value={onOffValue} changeOnOffStatus={setOnOffValue}/>
         </div>
     );
 }
