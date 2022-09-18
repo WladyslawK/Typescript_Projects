@@ -1,10 +1,20 @@
 import React, {useState} from "react";
-import {UncontrolledOnOff} from "./UncontrolledOnOff";
+import {OnOffType, UncontrolledOnOff} from "./UncontrolledOnOff";
+import {ComponentStory} from "@storybook/react";
 
 export default  {
-    title: "UNCONTROLLED On Off",
+    title: "Uncontrolled Components/UNCONTROLLED On Off",
     component: UncontrolledOnOff
 }
 
-export const On = () => <UncontrolledOnOff value={true}/>
-export const Off = () => <UncontrolledOnOff value={false}/>
+const Template: ComponentStory<typeof UncontrolledOnOff> = (args: OnOffType) => <UncontrolledOnOff {...args}/>
+
+export const On = Template.bind({})
+On.args = {
+  value: true
+}
+
+export const Off = Template.bind({})
+Off.args = {
+    value: false
+}

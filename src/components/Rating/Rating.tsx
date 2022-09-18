@@ -2,8 +2,15 @@ import React from 'react';
 import {Star} from "../Star";
 import {RatingValueType} from "../../App";
 
-type RatingType = {
+export type RatingType = {
+    /**
+     * value indicates the number of bold stars
+     */
     value: RatingValueType
+    /**
+     * func to change the number of bold stars
+     * @param rating
+     */
     onClick: (rating: RatingValueType) => void
 }
 

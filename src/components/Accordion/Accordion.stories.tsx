@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import {Accordion} from "./Accordion";
+import {Accordion, AccordionType} from "./Accordion";
 import {action} from "@storybook/addon-actions";
+import {ComponentStory} from "@storybook/react";
 
 export default {
-    title: "Controlled Accordion",
+    title: "Controlled Components/Controlled Accordion",
     component: Accordion
 }
 
@@ -14,15 +15,25 @@ const menuBody = [
     {id: 4, title: "link4"},
 ]
 
-const callback = action("accordion mode change fired")
+const callback =  () => {
+    action("accordion mode change fired")
+}
 
-export const CollapseAccordion = () => <Accordion title={"Menu"} collapsed={true} onClickChangeCollapsed={callback} accordionBody={menuBody}/>
+const Template: ComponentStory<typeof Accordion> = (args: AccordionType) => <Accordion {...args} />
 
-export const UnCollapseAccordion = () => <Accordion title={"Menu"} collapsed={false} onClickChangeCollapsed={callback} accordionBody={menuBody}/>
+
+export const CollapseAccordion = Template.bind({})
+CollapseAccordion.args = {
+    title: "Menu",
+    onClickChangeCollapsed: callback,
+    collapsed: true,
+    accordionBody: menuBody
+}
 
 export const ChangeAccordionCollapse = () => {
 
     const [collapsed, setCollapsed] = useState<boolean>(false)
 
-    return <Accordion title={"Menu"} collapsed={collapsed} onClickChangeCollapsed={() =>setCollapsed(!collapsed)} accordionBody={menuBody}/>
+    return <Accordion title={"Menu"} collapsed={collapsed} onClickChangeCollapsed={() => setCollapsed(!collapsed)}
+                      accordionBody={menuBody}/>
 }

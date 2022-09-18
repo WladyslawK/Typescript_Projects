@@ -5,9 +5,18 @@ type AccordionBodyType = {
     title: string
 }
 
-type UncontrolledAccordionType = {
+export type UncontrolledAccordionType = {
+    /**
+     * title of the Accordion menu
+     */
     accordionTitle: string
+    /**
+     * menu items
+     */
     accordionBody: Array<AccordionBodyType>
+    /**
+     * boolean value that defines if menu is collapsed or not
+     */
     collapsed: boolean
 }
 

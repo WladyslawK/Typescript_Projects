@@ -1,8 +1,15 @@
 import React, {useState} from 'react';
 
 
-type OnOffType = {
+export type OnOffType = {
+    /**
+     * value indicates if component is on or off
+     */
     value: boolean
+    /**
+     * callback func that switches on or off
+     * @param newValue
+     */
     changeOnOffStatus?: (newValue: boolean) => void
 }
 

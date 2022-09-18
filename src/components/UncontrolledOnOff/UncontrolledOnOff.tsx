@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import s from "./OnOff.module.css"
 
-type OnOffType = {
+export type OnOffType = {
+    /**
+     * value defines if indicator is on or off
+     */
     value: boolean
 }
 

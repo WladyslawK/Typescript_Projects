@@ -11,10 +11,23 @@ type AccordionTitleType = {
     onClickChangeCollapsed?: (newValue: boolean) => void
 }
 
-type AccordionType = {
+export type AccordionType = {
+    /**
+     * title of the menu
+     */
     title: string
+    /**
+     * value that defines whether the menu is collapsed
+     */
     collapsed: boolean
+    /**
+     * not required function that changes the value collapsed onClick
+     * @param newValue
+     */
     onClickChangeCollapsed?: (newValue: boolean) => void
+    /**
+     * Elements will be shown when Accordion is collapsed
+     */
     accordionBody: Array<AccordionBodyType>
 }
 

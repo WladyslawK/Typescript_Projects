@@ -1,9 +1,15 @@
 import React from "react";
-import {UncontrolledRating} from "./UncontrolledRating";
+import {RatingType, UncontrolledRating} from "./UncontrolledRating";
+import {ComponentStory} from "@storybook/react";
 
 export default {
-    title: "UNCONTROLLED Rating",
+    title: "Uncontrolled Components/UNCONTROLLED Rating",
     component: UncontrolledRating
 }
 
-export const Rating = () => <UncontrolledRating value={3}/>
+const Template: ComponentStory<typeof UncontrolledRating> = (args: RatingType) => <UncontrolledRating {...args}/>
+
+export const Rating = Template.bind({})
+Rating.args = {
+    value: 4
+}

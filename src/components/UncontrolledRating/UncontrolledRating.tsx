@@ -3,7 +3,10 @@ import {UncontrolledStar} from "./UncontrolledStar";
 import {RatingValueType} from "../../App";
 
 
-type RatingType = {
+export type RatingType = {
+    /**
+     * value that indicates the number of bold stars
+     */
     value: RatingValueType
 }
 

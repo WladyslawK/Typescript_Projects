@@ -1,8 +1,9 @@
 import React from "react";
-import {UncontrolledAccordion} from "./UncontrolledAccordion";
+import {UncontrolledAccordion, UncontrolledAccordionType} from "./UncontrolledAccordion";
+import {ComponentStory} from "@storybook/react";
 
 export default {
-    title: "UNCONTROLLED Accordion",
+    title: "Uncontrolled Components/UNCONTROLLED Accordion",
     component: UncontrolledAccordion
 }
 
@@ -14,4 +15,11 @@ const menuItems = [
     {id: 5, title: "link5"},
 ]
 
-export  const COLLAPSED_Accordion = () => <UncontrolledAccordion accordionTitle={"Menu"} accordionBody={menuItems} collapsed={true}/>
+const Template: ComponentStory<typeof UncontrolledAccordion> = (args: UncontrolledAccordionType) => <UncontrolledAccordion {...args}/>
+
+export const COLLAPSED_Accordion = Template.bind({})
+COLLAPSED_Accordion.args = {
+    accordionTitle: "Menu",
+    accordionBody: menuItems,
+    collapsed: true
+}
