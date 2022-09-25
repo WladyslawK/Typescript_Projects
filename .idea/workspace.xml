@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledInput/UncontrolledInput.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OnOff/ControlledOnOff.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/ControlledOnOff.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/ControlleRating.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/ControlleRating.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UNCONTROLLED_Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UNCONTROLLED_Accordion.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledOnOff/UNCONTROLLED_OnOff.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledOnOff/UNCONTROLLED_OnOff.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledOnOff/UncontrolledOnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledOnOff/UncontrolledOnOff.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UNCONTROLLED_Rating.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UNCONTROLLED_Rating.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +21,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\IT-kamasutra\\Course Homework\\Kabzda-kak-prosto\\IT_K_project_T1\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "ts.external.directory.path": "C:\\IT-kamasutra\\Course Homework\\Kabzda-kak-prosto\\IT_K_project_T1\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\OnOff\ControlledOnOff" />
@@ -102,7 +91,8 @@
       <workItem from="1662664252994" duration="8671000" />
       <workItem from="1662846521107" duration="23000" />
       <workItem from="1663394855194" duration="19545000" />
-      <workItem from="1663451449473" duration="3381000" />
+      <workItem from="1663451449473" duration="5271000" />
+      <workItem from="1664138146299" duration="1540000" />
     </task>
     <servers />
   </component>
