@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ControlledInputCheckboxSelect/ControlledInputCheckboxSelect.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.storybook" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
   </component>
@@ -92,7 +97,8 @@
       <workItem from="1662846521107" duration="23000" />
       <workItem from="1663394855194" duration="19545000" />
       <workItem from="1663451449473" duration="5271000" />
-      <workItem from="1664138146299" duration="3225000" />
+      <workItem from="1664138146299" duration="4181000" />
+      <workItem from="1664214877875" duration="9545000" />
     </task>
     <servers />
   </component>

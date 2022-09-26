@@ -6,6 +6,7 @@ import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOf
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {OnOff} from "./components/OnOff/OnOff";
+import {Select} from "./components/Select/Select";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -15,14 +16,32 @@ const menuItems = [
     {id: 5, title: "link5"},
 ]
 
+const selectOptions = [
+    {id: 0, title: "Option1"},
+    {id: 2, title: "Option2"},
+    {id: 3, title: "Option3"},
+    {id: 4, title: "Option4"},
+    {id: 5, title: "Option5"},
+]
+
 export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
+
+
 
 function App() {
 
     const [ratingValue, setRatingValue] = useState<RatingValueType>(3)
     const [accordionValue, setAccordionValue] = useState<boolean>(false)
     const [onOffValue, setOnOffValue] =useState<boolean>(false)
+
+    const [option, setOption] = useState(3)
+
+    const chooseOptionCallback =(id: number) => setOption(id)
     /*const changeRatingCallback = (newRating: RatingValueType) => setRatingValue(newRating)*/
+
+    const menuItemClicked = (id: number) => {
+        console.log(`Some item has been clicked ${id}`)
+    }
 
 
     return (
@@ -31,7 +50,7 @@ function App() {
         <Accordion accordionTitle={"Menu1"} accordionBody={menuItems} collapsed={true}/>*/}
 
             <h4>Controlled Accordion according to the BLL UI concept</h4>
-            <Accordion title={"Controlled Accordion"} accordionBody={menuItems} collapsed={accordionValue} onClickChangeCollapsed={setAccordionValue}/>
+            <Accordion title={"Controlled Accordion"} accordionBody={menuItems} callback={menuItemClicked} collapsed={accordionValue} onClickChangeCollapsed={setAccordionValue}/>
 
             <h4>Uncontrolled Accordion with local state</h4>
             <UncontrolledAccordion accordionTitle={"Uncontrolled Menu"} accordionBody={menuItems} collapsed={true}/>
@@ -49,6 +68,8 @@ function App() {
 
             <h4>Controlled OnOff </h4>
             <OnOff value={onOffValue} changeOnOffStatus={setOnOffValue}/>
+
+            <Select title={"Town"} options={selectOptions} chooseOption={chooseOptionCallback} chosenOption={option}/>
         </div>
     );
 }

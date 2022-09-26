@@ -29,9 +29,10 @@ export type AccordionType = {
      * Elements will be shown when Accordion is collapsed
      */
     accordionBody: Array<AccordionBodyType>
+    callback: (id: number) => void
 }
 
-export const Accordion: React.FC<AccordionType> = ({title, collapsed, onClickChangeCollapsed, accordionBody}) => {
+export const Accordion: React.FC<AccordionType> = (props) => {
 
 
 
@@ -45,11 +46,12 @@ export const Accordion: React.FC<AccordionType> = ({title, collapsed, onClickCha
 
     type AccordionBodyMenuType = {
         menuItems: Array<AccordionBodyType>
+        callback: (id: number) => void
     }
 
-    const AccordionBody: React.FC<AccordionBodyMenuType> = ({menuItems}) => {
+    const AccordionBody: React.FC<AccordionBodyMenuType> = ({menuItems,callback}) => {
 
-        const accordionBodyElements = menuItems.map(item => <li key={item.id}>{item.title}</li>)
+        const accordionBodyElements = menuItems.map(item => <li key={item.id} onClick={() => callback(item.id)}>{item.title}</li>)
 
         return (
             <ul>
@@ -60,8 +62,8 @@ export const Accordion: React.FC<AccordionType> = ({title, collapsed, onClickCha
 
     return (
         <>
-            <AccordionTitle title={title} onClickChangeCollapsed={onClickChangeCollapsed  && onClickChangeCollapsed} collapsed={collapsed}/>
-            {!collapsed && <AccordionBody menuItems={accordionBody}/>}
+            <AccordionTitle title={props.title} onClickChangeCollapsed={props.onClickChangeCollapsed  && props.onClickChangeCollapsed} collapsed={props.collapsed}/>
+            {!props.collapsed && <AccordionBody menuItems={props.accordionBody} callback={props.callback}/>}
         </>
     );
 

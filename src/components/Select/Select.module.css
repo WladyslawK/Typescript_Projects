@@ -1,0 +1,39 @@
+.mainContainer{
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+.list{
+    list-style: none;
+    margin-left: -20px;
+}
+.chosenOption{
+    width: 80px;
+    border: none;
+    border-bottom: 1px black solid;
+}
+.collapsed{
+    display: none;
+}
+.chosenOption img{
+    margin-left: 5px;
+    width: 10px;
+}
+.chosenOption legend{
+    font-size: 10px;
+}
+.collapseContainer{
+    margin-top: -15px;
+    width: 110px;
+    background-color: #444950;
+    border-radius: 7px;
+}
+.option{
+    width: 100%;
+    text-align: center;
+}
+.option:hover{
+    background-color: dimgrey;
+}
+.selected{
+    background-color: #333333;
+}
