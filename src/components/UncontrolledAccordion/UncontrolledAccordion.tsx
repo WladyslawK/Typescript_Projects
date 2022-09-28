@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useReducer, useState} from 'react';
 
 type AccordionBodyType = {
     id: number
@@ -20,10 +20,32 @@ export type UncontrolledAccordionType = {
     collapsed: boolean
 }
 
+export function collapsedMenuReducer(state: boolean, action: collapsedMenuReducerACType){
+    if(action.type === "UPDATE-COLLAPSED VALUE"){
+        return !action.payload.collapsed
+    }
+    return state
+}
+
+type collapsedMenuReducerACType = ReturnType<typeof collapsedMenuReducerAC>
+export  const collapsedMenuReducerAC = (collapsed: boolean) => {
+    return ({
+        type: "UPDATE-COLLAPSED VALUE",
+        payload: {
+            collapsed: collapsed
+        }
+    }) as const
+}
+
+
 export const UncontrolledAccordion: React.FC<UncontrolledAccordionType> = ({accordionTitle, accordionBody, collapsed}) => {
 
-    const [collapsedMenu, setCollapsedMenu] = useState(collapsed)
-    const changeCollapsedCallback = (newValue: boolean) => setCollapsedMenu(newValue)
+    //const [collapsedMenu, setCollapsedMenu] = useState(collapsed)
+    const [collapsedMenu, collapsedMenuDispatch] = useReducer(collapsedMenuReducer, collapsed)
+    const changeCollapsedCallback = (newValue: boolean) => {
+        //setCollapsedMenu(newValue)
+        collapsedMenuDispatch(collapsedMenuReducerAC(newValue))
+    }
 
     type AccordionTitleType = {
         title: string
@@ -34,7 +56,7 @@ export const UncontrolledAccordion: React.FC<UncontrolledAccordionType> = ({acco
     const AccordionTitle: React.FC<AccordionTitleType> = ({title, changeCollapsedMenu, collapsedValue}) => {
 
         const changeCollapsedValueHandler = () => {
-            changeCollapsedMenu(!collapsedValue)
+            changeCollapsedMenu(collapsedValue)
         }
 
         return (
@@ -61,7 +83,7 @@ export const UncontrolledAccordion: React.FC<UncontrolledAccordionType> = ({acco
 
     return (
         <>
-            <AccordionTitle title={accordionTitle} collapsedValue={collapsedMenu} changeCollapsedMenu={setCollapsedMenu}/>
+            <AccordionTitle title={accordionTitle} collapsedValue={collapsedMenu} changeCollapsedMenu={changeCollapsedCallback}/>
             {collapsedMenu && <AccordionBody menuItems={accordionBody}/>}
         </>
     );
