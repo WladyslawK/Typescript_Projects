@@ -1,0 +1,19 @@
+.select span.main{
+     border: 1px black solid;
+     display: inline-block;
+     min-width: 70px;
+     min-height: 20px;
+}
+.items{
+     position: absolute;
+     border: 1px black solid;
+}
+.item:hover{
+     color: white;
+     background-color: blue;
+}
+.itemHovered{
+     color: white;
+     background-color: blue;
+}
+

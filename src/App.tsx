@@ -7,6 +7,7 @@ import {UncontrolledAccordion} from "./components/UncontrolledAccordion/Uncontro
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {Select} from "./components/Select/Select";
+import {DefaultSelect} from "./components/DefaultSelect/DefaultSelect";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -34,10 +35,15 @@ function App() {
     const [accordionValue, setAccordionValue] = useState<boolean>(false)
     const [onOffValue, setOnOffValue] =useState<boolean>(false)
 
-    const [option, setOption] = useState(3)
+    const [option, setOption] = useState(2)
 
     const chooseOptionCallback =(id: number) => setOption(id)
     /*const changeRatingCallback = (newRating: RatingValueType) => setRatingValue(newRating)*/
+
+    //DefaultSelect Component
+    const [value, setValue] = useState("2")
+
+    const onChangeValue = (newValue: string) => setValue(newValue)
 
     const menuItemClicked = (id: number) => {
         console.log(`Some item has been clicked ${id}`)
@@ -70,6 +76,14 @@ function App() {
             <OnOff value={onOffValue} changeOnOffStatus={setOnOffValue}/>
 
             <Select title={"Town"} options={selectOptions} chooseOption={chooseOptionCallback} chosenOption={option}/>
+
+            <DefaultSelect options={[
+                {value: "1", title: "Warsaw"},
+                {value: "2", title: "Krakow"},
+                {value: "3", title: "Rzeszow"},
+            ]} valueChange={onChangeValue}
+            value={"1"}
+            />
         </div>
     );
 }

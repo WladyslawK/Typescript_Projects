@@ -26,18 +26,36 @@ export const Select: React.FC<SelectType> = (props) => {
         setCollapsed(false)
     }
 
-    const optionItems = props.options.map(option => <div className={option.id === props.chosenOption ?  style.option + " " + style.selected : style.option} key={option.id} onClick={() => chooseOptionHandler(option.id)}>{option.title}</div>)
+    const optionItems = props.options.map(option =>
+        <div
+            className={option.id === props.chosenOption ? style.option + " " + style.selected : style.option}
+            key={option.id}
+            onClick={() => chooseOptionHandler(option.id)}>
+            {option.title}
+        </div>)
 
     return (
         <div className={style.mainContainer}>
 
-            <fieldset className={style.chosenOption} onClick={collapsedHandler}><legend>{props.title}</legend><span className={collapsed ? style.collapsed : ""}>{initialOption && initialOption.title ? initialOption.title : ""}</span>
-                <img className={collapsed ? style.collapsed : ""} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmOhIAG7SyqaIWfCwoHprUtcmRcwc8GFXk1yHEjP77sA&s" alt="arrow"/></fieldset>
-            {collapsed ?
-                <div className={style.collapseContainer}>
+            <fieldset className={style.chosenOption} onClick={collapsedHandler}>
+                <legend>{props.title}</legend>
+                <span className={collapsed ? style.collapsed : ""}>
+                    {
+                        initialOption && initialOption.title ? initialOption.title : ""
+                    }
+                </span>
+                <img className={collapsed ? style.collapsed : ""}
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmOhIAG7SyqaIWfCwoHprUtcmRcwc8GFXk1yHEjP77sA&s"
+                     alt="arrow"/>
+            </fieldset>
+
+            {
+                collapsed ?
+                    <div className={style.collapseContainer}>
                         {optionItems}
-                </div> :
-                ""}
+                    </div> :
+                    ""
+            }
         </div>
     );
 };
