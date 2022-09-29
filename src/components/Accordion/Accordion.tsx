@@ -32,9 +32,8 @@ export type AccordionType = {
     callback: (id: number) => void
 }
 
-export const Accordion: React.FC<AccordionType> = (props) => {
 
-
+export const AccordionMemo: React.FC<AccordionType> = (props) => {
 
     const AccordionTitle: React.FC<AccordionTitleType> = ({title, onClickChangeCollapsed, collapsed}) => {
         return (
@@ -69,3 +68,5 @@ export const Accordion: React.FC<AccordionType> = (props) => {
 
 
 };
+
+export const Accordion = React.memo(AccordionMemo)

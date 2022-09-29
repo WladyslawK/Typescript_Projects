@@ -13,7 +13,7 @@ type SelectType = {
     chooseOption: (id: number) => void
 }
 
-export const Select: React.FC<SelectType> = (props) => {
+export const SelectMemo: React.FC<SelectType> = (props) => {
 
     const [collapsed, setCollapsed] = useState(false)
 
@@ -59,3 +59,5 @@ export const Select: React.FC<SelectType> = (props) => {
         </div>
     );
 };
+
+export const Select = React.memo(SelectMemo)

@@ -13,7 +13,7 @@ export type OnOffType = {
     changeOnOffStatus?: (newValue: boolean) => void
 }
 
-export const OnOff: React.FC<OnOffType> = ({value, changeOnOffStatus}) => {
+export const OnOffMemo: React.FC<OnOffType> = ({value, changeOnOffStatus}) => {
 
 
     const changeIndicatorHandler = (newValue: boolean) => {
@@ -67,3 +67,5 @@ export const OnOff: React.FC<OnOffType> = ({value, changeOnOffStatus}) => {
         </div>
     );
 };
+
+export const OnOff = React.memo(OnOffMemo)

@@ -11,7 +11,7 @@ import {DefaultSelect} from "./components/DefaultSelect/DefaultSelect";
 
 const menuItems = [
     {id: 1, title: "link1"},
-    {id: 2, title: "link2"},
+    {id: 2, title: "linkMemo"},
     {id: 3, title: "link3"},
     {id: 4, title: "link4"},
     {id: 5, title: "link5"},

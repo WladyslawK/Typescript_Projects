@@ -8,10 +8,12 @@ type StarType = {
     onClick: (newRating: RatingValueType) => void
 }
 
-export  const Star: React.FC<StarType> = ({id, selected, onClick}) => {
+export  const StarMemo: React.FC<StarType> = ({id, selected, onClick}) => {
     return (
         <>
           {<span onClick={() => onClick(id)} className={s.container}> {selected ? <strong>star </strong>: "star "}</span>}
         </>
     );
 };
+
+export const Star = React.memo(StarMemo)

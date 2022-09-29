@@ -8,7 +8,7 @@ type DefaultSelectType = {
 
 }
 
-export const DefaultSelect: React.FC<DefaultSelectType> = ({valueChange, options, value}) => {
+export const DefaultSelectMemo: React.FC<DefaultSelectType> = ({valueChange, options, value}) => {
 
     const [active, setActive] = useState(false)
     const [hoveredElement, setHoveredElement] = useState(value)
@@ -75,3 +75,5 @@ export const DefaultSelect: React.FC<DefaultSelectType> = ({valueChange, options
         </div>
     );
 };
+
+export  const DefaultSelect = React.memo(DefaultSelectMemo)

@@ -38,7 +38,7 @@ export  const collapsedMenuReducerAC = (collapsed: boolean) => {
 }
 
 
-export const UncontrolledAccordion: React.FC<UncontrolledAccordionType> = ({accordionTitle, accordionBody, collapsed}) => {
+export const UncontrolledAccordionMemo: React.FC<UncontrolledAccordionType> = ({accordionTitle, accordionBody, collapsed}) => {
 
     //const [collapsedMenu, setCollapsedMenu] = useState(collapsed)
     const [collapsedMenu, collapsedMenuDispatch] = useReducer(collapsedMenuReducer, collapsed)
@@ -90,3 +90,5 @@ export const UncontrolledAccordion: React.FC<UncontrolledAccordionType> = ({acco
 
 
 };
+
+export const UncontrolledAccordion = React.memo(UncontrolledAccordionMemo)

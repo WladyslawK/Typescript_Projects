@@ -10,7 +10,7 @@ export type RatingType = {
     value: RatingValueType
 }
 
-export const UncontrolledRating: React.FC<RatingType> = ({value}) => {
+export const UncontrolledRatingMemo: React.FC<RatingType> = ({value}) => {
 
     const [starValue, setStarValue] = useState<RatingValueType>(value)
 
@@ -29,3 +29,5 @@ export const UncontrolledRating: React.FC<RatingType> = ({value}) => {
         </div>
     )
 };
+
+export const UncontrolledRating = React.memo(UncontrolledRatingMemo)

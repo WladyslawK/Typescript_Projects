@@ -8,7 +8,7 @@ export type OnOffType = {
     value: boolean
 }
 
-export const UncontrolledOnOff: React.FC<OnOffType> = ({value}) => {
+export const UncontrolledOnOffMemo: React.FC<OnOffType> = ({value}) => {
 
     const [indicatorValue, setIndicatorValue] = useState(value)
 
@@ -62,3 +62,5 @@ export const UncontrolledOnOff: React.FC<OnOffType> = ({value}) => {
         </div>
     );
 };
+
+export const UncontrolledOnOff = React.memo(UncontrolledOnOffMemo)

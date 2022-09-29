@@ -14,7 +14,7 @@ export type RatingType = {
     onClick: (rating: RatingValueType) => void
 }
 
-export const Rating: React.FC<RatingType> = ({value, onClick}) => {
+export const RatingMemo: React.FC<RatingType> = ({value, onClick}) => {
 
     const arrStars = []
     for(let i = 1; i < 6; i++){
@@ -30,3 +30,5 @@ export const Rating: React.FC<RatingType> = ({value, onClick}) => {
 
     )
 };
+
+export const Rating = React.memo(RatingMemo)
