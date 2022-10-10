@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {memo, useState} from "react";
 
 export default {
     title: "React Memo DEMO"
@@ -13,14 +13,12 @@ const NewMessagesCounter = (props: any) => {
     )
 }
 
-const UsersOptimized = (props: { users: Array<{ id: number, title: string }> }) => {
+const Users = memo((props: { users: Array<{ id: number, title: string }> }) => {
     console.log("USERS")
     return (
         <div>{props.users.map(user => <div key={user.id}>{user.title}</div>)}</div>
     )
-}
-
-const Users = React.memo(UsersOptimized)
+})
 
 
 export const Example = () => {

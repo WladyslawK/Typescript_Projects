@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/collapseMenuReducer.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/ReactMemoDemo.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemo.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Accordion/Accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledAccordion/UncontrolledAccordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/ReactMemoDemo.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ReactMemoDemo.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Collapsed value should changed to opposite" />
         <item itemvalue="npm.start" />
+        <item itemvalue="Jest.Collapsed value should changed to opposite" />
         <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
@@ -121,7 +119,8 @@
       <workItem from="1663451449473" duration="5271000" />
       <workItem from="1664138146299" duration="4181000" />
       <workItem from="1664214877875" duration="11649000" />
-      <workItem from="1664372002234" duration="22421000" />
+      <workItem from="1664372002234" duration="26240000" />
+      <workItem from="1665380743872" duration="5570000" />
     </task>
     <servers />
   </component>

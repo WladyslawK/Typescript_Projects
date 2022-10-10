@@ -8,6 +8,7 @@ import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRa
 import {OnOff} from "./components/OnOff/OnOff";
 import {Select} from "./components/Select/Select";
 import {DefaultSelect} from "./components/DefaultSelect/DefaultSelect";
+import {UseMemo} from "./components/UseMemo/UseMemo";
 
 const menuItems = [
     {id: 1, title: "link1"},
@@ -84,6 +85,9 @@ function App() {
             ]} valueChange={onChangeValue}
             value={"1"}
             />
+
+            {/*UseMemo 08*/}
+            <UseMemo/>
         </div>
     );
 }
