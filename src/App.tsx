@@ -41,6 +41,7 @@ function App() {
     const chooseOptionCallback =(id: number) => setOption(id)
     /*const changeRatingCallback = (newRating: RatingValueType) => setRatingValue(newRating)*/
 
+
     //DefaultSelect Component
     const [value, setValue] = useState("2")
 
@@ -83,7 +84,7 @@ function App() {
                 {value: "2", title: "Krakow"},
                 {value: "3", title: "Rzeszow"},
             ]} valueChange={onChangeValue}
-            value={"1"}
+            value={value}
             />
 
             {/*UseMemo 08*/}

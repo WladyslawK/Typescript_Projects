@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {memo, useState} from 'react';
 import style from "./Select.module.css"
 
 type OptionType = {
@@ -14,6 +14,7 @@ type SelectType = {
 }
 
 export const SelectMemo: React.FC<SelectType> = (props) => {
+    console.log("Select rendered")
 
     const [collapsed, setCollapsed] = useState(false)
 
@@ -58,6 +59,6 @@ export const SelectMemo: React.FC<SelectType> = (props) => {
             }
         </div>
     );
-};
+}
 
 export const Select = React.memo(SelectMemo)

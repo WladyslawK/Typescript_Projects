@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemo.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemoWithSelects.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DefaultSelect/DefaultSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DefaultSelect/DefaultSelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UseMemo/UseMemo.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemo.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stories/ReactMemoDemo.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ReactMemoDemo.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +122,7 @@
       <workItem from="1664138146299" duration="4181000" />
       <workItem from="1664214877875" duration="11649000" />
       <workItem from="1664372002234" duration="26240000" />
-      <workItem from="1665380743872" duration="5570000" />
+      <workItem from="1665380743872" duration="12086000" />
     </task>
     <servers />
   </component>

@@ -63,7 +63,11 @@ const NewMessagesCounter = (props: any) => {
 const Users = memo((props: { users: Array<{ id: number, title: string }> }) => {
     console.log("USERS")
     return (
-        <div>{props.users.map(user => <div key={user.id}>{user.title}</div>)}</div>
+        <div>
+            {
+                props.users.map(user => <div key={user.id}>{user.title}</div>)
+            }
+        </div>
     )
 })
 
