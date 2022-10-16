@@ -11,7 +11,7 @@ export const UseMemoSelectsExample = () => {
     const [cities, SetCities] = useState([
         {id: 1, title: "Warsaw", population: 2300000, country: "Poland"},
         {id: 2, title: "Krakow", population: 1300000, country: "Poland"},
-        {id: 3, title: "Rzeszow", population: 730000, country: "Poland"},
+        {id: 3, title: "Gdansk", population: 730000, country: "Poland"},
         {id: 4, title: "Barcelona", population: 100000, country: "Spain"},
         {id: 5, title: "Madrid", population: 1500000, country: "Spain"},
         {id: 6, title: "Valencia", population: 800000, country: "Spain"},
