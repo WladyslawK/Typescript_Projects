@@ -18,7 +18,7 @@ export const RatingMemo: React.FC<RatingType> = ({value, onClick}) => {
 
     const arrStars = []
     for(let i = 1; i < 6; i++){
-        arrStars.push(<Star id={i as RatingValueType} selected={value >= i} onClick={onClick}/>)
+        arrStars.push(<Star key={i} id={i as RatingValueType} selected={value >= i} onClick={onClick}/>)
     }
     return (
         <>

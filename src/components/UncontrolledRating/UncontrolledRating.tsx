@@ -20,7 +20,7 @@ export const UncontrolledRatingMemo: React.FC<RatingType> = ({value}) => {
 
     const arrayStars = []
     for(let i = 1; i < 6; i++){
-        arrayStars.push(<UncontrolledStar selected={starValue > i-1} changeRating={changeRatingCallback} id={i as RatingValueType}/>)
+        arrayStars.push(<UncontrolledStar key={i} selected={starValue > i-1} changeRating={changeRatingCallback} id={i as RatingValueType}/>)
     }
 
    return (
