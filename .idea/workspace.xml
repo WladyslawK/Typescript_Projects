@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UseMemo/UseСallback.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useState10/UseStateImportantKnowledge.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UseMemo/UseMemoWithSelects.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UseMemo/UseMemoWithSelects.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1/src/components/UseMemo",
+    "last_opened_file_path": "C:/IT-kamasutra/Course Homework/Kabzda-kak-prosto/IT_K_project_T1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -121,7 +120,8 @@
       <workItem from="1664372002234" duration="26240000" />
       <workItem from="1665380743872" duration="12516000" />
       <workItem from="1665505081194" duration="123000" />
-      <workItem from="1665859841961" duration="4077000" />
+      <workItem from="1665859841961" duration="5069000" />
+      <workItem from="1666549468516" duration="4408000" />
     </task>
     <servers />
   </component>
