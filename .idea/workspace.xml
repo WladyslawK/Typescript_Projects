@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/useState10/Clock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useState10/ClockStory.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UncontrolledRating/UncontrolledRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/useState10/Clock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useState10/Clock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/useState10/UseEffect.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useState10/UseEffect.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +124,9 @@
       <workItem from="1665380743872" duration="12516000" />
       <workItem from="1665505081194" duration="123000" />
       <workItem from="1665859841961" duration="5069000" />
-      <workItem from="1666549468516" duration="9145000" />
+      <workItem from="1666549468516" duration="9843000" />
+      <workItem from="1666625565259" duration="918000" />
+      <workItem from="1667855802369" duration="2248000" />
     </task>
     <servers />
   </component>

@@ -9,7 +9,7 @@ export const UseEffectCounterExample = () => {
     const [counter, setCounter] = useState(0)
     const [fakeCounter, setFakeCounter] = useState(0)
 
-    useEffect(()=> {
+    useEffect(() => {
         console.log("called only once (like componentDidMount in class Component)")
     }, [])
 
@@ -18,7 +18,7 @@ export const UseEffectCounterExample = () => {
         document.title = counter.toString()
     }, [counter])
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log("called all the time (all useEffects called after jsx returned)")
 
         //side effects
@@ -45,22 +45,26 @@ export const UseEffectSetInterval = () => {
 
     const [counter, setCounter] = useState(0)
 
-    useEffect(()=> {
-        setTimeout(()=> {
+    useEffect(() => {
+        setTimeout(() => {
             console.log("set title called")
             document.title = counter.toString()
         }, 1000)
     }, [])
 
-    useEffect(()=> {
-        setInterval(()=> {
+    useEffect(() => {
+        const intervalID = setInterval(() => {
             console.log("tick: ", counter)
-            setCounter(state => state + 1 )
+            setCounter(state => state + 1)
         }, 1000)
-    },[])
+
+        return () => {
+            clearInterval(intervalID)
+        }
+    }, [])
 
 
-    return(
+    return (
         <div>
             <span>{counter}</span>
             <button onClick={() => setCounter(counter + 1)}>Incr</button>

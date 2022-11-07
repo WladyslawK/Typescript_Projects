@@ -92,7 +92,7 @@ function App() {
             <UseMemo/>
 
             {/*hw10 clock*/}
-            <Clock/>F
+            <Clock/>
         </div>
     );
 }
