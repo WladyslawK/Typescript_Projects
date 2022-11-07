@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7789f01b-ed8d-4a6e-abfa-cc10959066f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/useState10/ClockStory.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useState10/clock/AnalogClockView.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useState10/clock/AnalogClockView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useState10/clock/Clock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useState10/clock/DigitalClockView.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/useState10/Clock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useState10/Clock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/useState10/Clock.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/useState10/ClockStory.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useState10/ClockStory.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/useState10/UseEffect.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/useState10/UseEffect.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +60,7 @@
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\UncontrolledAccordion" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\useState10\clock" />
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components" />
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\Accordion" />
       <recent name="C:\IT-kamasutra\Course Homework\Kabzda-kak-prosto\IT_K_project_T1\src\components\Rating" />
@@ -126,7 +131,7 @@
       <workItem from="1665859841961" duration="5069000" />
       <workItem from="1666549468516" duration="9843000" />
       <workItem from="1666625565259" duration="918000" />
-      <workItem from="1667855802369" duration="2248000" />
+      <workItem from="1667855802369" duration="5706000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import {Clock} from "./Clock";
+import {Clock} from "./clock/Clock";
 
 export default {
     title: "lesson10/Clock Component",
@@ -6,3 +6,7 @@ export default {
 }
 
 export const BasicExample = () => <Clock/>
+
+export const AnalogExample = () => <Clock mode={"analog"}/>
+
+export const DigitalClock = () => <Clock mode={"digital"}/>

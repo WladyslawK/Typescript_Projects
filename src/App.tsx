@@ -9,7 +9,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {Select} from "./components/Select/Select";
 import {DefaultSelect} from "./components/DefaultSelect/DefaultSelect";
 import {UseMemo} from "./components/UseMemo/UseMemo";
-import {Clock} from "./components/useState10/Clock";
+import {Clock} from "./components/useState10/clock/Clock";
 
 const menuItems = [
     {id: 1, title: "link1"},
