@@ -1,7 +1,7 @@
 import Rect, {memo, useMemo, useState} from "react";
 
 export default {
-    title: "lesson10/UseState Important Knowledge"
+    title: "lesson10-12/UseState Important Knowledge"
 }
 
 const difCounting = () => {

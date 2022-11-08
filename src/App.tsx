@@ -92,7 +92,8 @@ function App() {
             <UseMemo/>
 
             {/*hw10 clock*/}
-            <Clock/>
+            <Clock mode={"analog"}/>
+            <Clock mode={"digital"}/>
         </div>
     );
 }

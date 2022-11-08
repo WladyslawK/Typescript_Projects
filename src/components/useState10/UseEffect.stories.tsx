@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 
 export default {
-    title: "lesson10/UseEffect"
+    title: "lesson10-12/UseEffect"
 }
 
 export const UseEffectCounterExample = () => {
@@ -70,4 +70,50 @@ export const UseEffectSetInterval = () => {
             <button onClick={() => setCounter(counter + 1)}>Incr</button>
         </div>
     )
+}
+
+export const ResetEffectExample = () => {
+
+    const [counter, setCounter] = useState(0)
+
+    console.log("Component rendered with ", counter)
+
+    useEffect(() => {
+        console.log("Effect occurred ", counter)
+
+        return () => {
+            console.log("Reset Effect ", counter)
+        }
+    }, [counter])
+
+    const increase = () => setCounter(counter + 1)
+
+    return (
+        <> Hello Counter: {counter}
+            <button onClick={increase}>Incr</button>
+        </>)
+}
+
+export const KeyTracker = () => {
+
+    const [text, setText] = useState('')
+    console.log("Component rendered with text: ", text)
+
+    useEffect(() => {
+
+        const handler = (e: KeyboardEvent) => {
+            console.log("Key: ", e.key)
+            setText((state) => state +e.key)
+        }
+
+        window.addEventListener('keypress', handler)
+
+        return () => window.removeEventListener("keypress", handler)
+
+    }, [])
+
+    return (
+        <>
+            Text: {text}
+        </>)
 }
